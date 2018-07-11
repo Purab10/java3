@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Largest{
+	public static void main(String A[])
+	{
+		
+	Scanner pp=new Scanner(System.in);
+	System.out.println("Enter the first no.");
+	int a=pp.nextInt();
+	System.out.println("Enter the second no.");
+	int b=pp.nextInt();
+	System.out.println("Enter the second no.");
+	int c=pp.nextInt();
+	
+	if(a>b && a>c)
+	{
+		System.out.println("  largest of the three is" +a);
+	}
+	else if(b>a && b>c)
+	{
+		System.out.println("  largest of the three is "+b);
+	}
+	else if(c>a && c>b)
+	{
+		System.out.println("  largest of the three is"+c);
+	}
+     else if((b==c)&&(c==a))
+	{
+		System.out.println("All the 3 given numbers are equal");
+	}
+	}
+}
